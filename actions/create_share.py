@@ -45,7 +45,7 @@ class CreateShareAction(Action):
             }
         })
 
-        if resp.status_code == 201:
-            return (True, resp.json()['id'])
-        else:
-            return (False, None)
+        return (True, {
+            "post_id": resp.json().get('id'),
+            "status_code": resp.status_code
+        })
