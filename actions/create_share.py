@@ -7,7 +7,7 @@ __all__ = [
 
 class CreateShareAction(Action):
 
-    def run(self, access_token, commentary, title, url):
+    def run(self, commentary, title, url):
 
         access_token = self.config.get('access_token')
 
