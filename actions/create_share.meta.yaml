@@ -1,0 +1,19 @@
+---
+  name: "create_share"
+  runner_type: "python-script"
+  description: "Share something on LinkedIn"
+  enabled: true
+  entry_point: "create_share.py"
+  parameters:
+    title:
+      type: "string"
+      description: "Title of the thing you're sharing"
+      required: true
+    commentary:
+      type: "string"
+      description: "Comments on the thing you're sharing"
+      required: true
+    url:
+      type: "string"
+      description: "URL of the thing you're sharing"
+      required: true

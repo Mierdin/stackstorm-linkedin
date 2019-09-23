@@ -1,0 +1,6 @@
+---
+access_token:
+  type: "string"
+  secret: true
+  description: "Access token retrieved via OAuth 3-step process"
+  required: true
